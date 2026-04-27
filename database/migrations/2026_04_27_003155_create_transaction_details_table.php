@@ -13,7 +13,10 @@ return new class extends Migration
     {
         Schema::create('transaction_details', function (Blueprint $table) {
             $table->id();
-            $
+            $table->foreignId('transaction_id');
+            $table->foreignId('item_id');
+            $table->integer('qty');
+            $table->integer('subtotal');
             $table->timestamps();
         });
     }

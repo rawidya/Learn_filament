@@ -24,8 +24,6 @@ class ItemForm
                 TextInput::make('qty')
                     ->required()
                     ->numeric(),
-                TextInput::make('icon')
-                    ->maxLength(255),
             ]);
     }
 }
